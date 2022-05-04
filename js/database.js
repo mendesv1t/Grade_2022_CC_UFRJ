@@ -7,53 +7,60 @@ window.colors = ["#b1fca4", "#fac6ff", "#a8c9ff"];
 
 // Order of courses matters: do not swap positions. Append at the end.
 window.courses = [
-    { name: "Fund da Comp. Digital", credits: 4, code: "MAB111", semester: 1},
-    { name: "Sistemas de Informação", credits: 4, code: "MAB112", semester: 1},
-    { name: "Computação I (CC)", credits: 5, code: "MAB120", semester: 1},
-    { name: "Num. Inteiros e Criptografia", credits: 5, code: "MAB624", semester: 1},
-    { name: "Ativ. Complementares", credits: 4, code: "MABX01", semester: 1},
-    { name: "Cálculo Infinitesimal I", credits: 6, code: "MAE111", semester: 1},
-
-    { name: "Organização da Informação", credits: 4, code: "MAB113", semester: 2},
-    { name: "Computação II (CC)", credits: 5, code: "MAB240", semester: 2, requirements: [2]},
-    { name: "Circuitos Lógicos", credits: 4, code: "MAB245", semester: 2, requirements: [0]},
-    { name: "Matemática Combinatória", credits: 4, code: "MAB352", semester: 2, requirements: [3]},
-    { name: "Cálculo Integ e Diferencial II", credits: 4, code: "MAE992", semester: 2, requirements: [5]},
-
-    { name: "Mecânica, Oscilação e Ondas", credits: 5, code: "FIW125", semester: 3, requirements: [10]},
-    { name: "Álgebra Linear Algorítmica", credits: 5, code: "MAB115", semester: 3},
-    { name: "Estrutura dos Dados", credits: 4, code: "MAB116", semester: 3, requirements: [2]},
-    { name: "Linguagens Formais", credits: 4, code: "MAB123", semester: 3, requirements: [9]},
-    { name: "Computadores e Programação", credits: 4, code: "MAB353", semester: 3, requirements: [2,8]},
-    { name: "Cálculo Int e Diferencial III", credits: 4, code: "MAE993", semester: 3, requirements: [10]},
-
-    { name: "Eletromagnetismo e Ótica", credits: 5, code: "FIW230", semester: 4, requirements: [11,16]},
-    { name: "Computação Concorrente", credits: 4, code: "MAB117", semester: 4, requirements: [7]},
-    { name: "Cálculo Numérico (CC)", credits: 4, code: "MAB230", semester: 4, requirements: [2,10]},
-    { name: "Algoritmos e Grafos", credits: 4, code: "MAB368", semester: 4},
-    { name: "Cálculo Int e Diferencial IV", credits: 4, code: "MAE994", semester: 4, requirements: [10,12]},
-
-    { name: "Lógica", credits: 4, code: "MAB236", semester: 5, requirements: [3]},
-    { name: "Computadores e Sociedade", credits: 4, code: "MAB354", semester: 5},
-    { name: "Arquitetura de Computadores I", credits: 4, code: "MAB355", semester: 5, requirements: [8]},
-    { name: "Compiladores I", credits: 4, code: "MAB471", semester: 5, requirements: [14]},
-    { name: "Banco de Dados I", credits: 4, code: "MAB489", semester: 5, requirements: [13]},
-    { name: "Fund da Engenharia de Software", credits: 4, code: "MAB533", semester: 5, requirements: [13]},
-
-    { name: "Computação Gráfica I", credits: 4, semester: 6, code: "MAB122", requirements: [7,12]},
-    { name: "Programação Linear I", credits: 4, code: "MAB232", semester: 6, requirements: [12]},
-    { name: "Inteligência Artificial", credits: 4, code: "MAB508", semester: 6, requirements: [22]},
-    { name: "Estatística e Probabilidade", credits: 4, code: "MAD243", semester: 6, requirements: [11]},
-    { name: "Atividades Academ de Livre Escolha", credits: 4, semester: 6},
-
-    { name: "Sistemas Operacionais I", credits: 4, code: "MAB366", semester: 7, requirements: [24]},
-    { name: "Avaliação e Desempenho", credits: 4, code: "MAB515", semester: 7, requirements: [31]},
-    { name: "Atividades Academ Optativas", credits: 8, semester: 7},
-
-    { name: "Teleprocessamento e Redes", credits: 4, code: "MAB510", semester: 8, requirements: [24]},
-    { name: "Projeto Final de Curso", credits: 2, code: "MABX02", semester: 8},
-    { name: "Atividades Academ Optativas", credits: 16, semester: 8,},
-
-    { name: "Atividades Academ Optativas", credits: 12, semester: 9, step: 1},
-
+    //0-5
+    { name: "Programação de Computadores I", credits: 4, code: "ICP131", semester: 1},
+    { name: "Num. Inteiros e Criptografia", credits: 4, code: "ICP134", semester: 1},
+    { name: "Projeto de Carreira", credits: 4, code: "ICP135", semester: 1},
+    { name: "Introdução ao Pensamento Dedutivo", credits: 4, code: "ICP136", semester: 1},
+    { name: "Processos de Software", credits: 4, code: "ICP132", semester: 1},
+    { name: "Fundamentos de Sistemas de Computação", credits: 4, code: "ICP133", semester: 1},
+    //6-11
+    { name: "Programação de Computadores II", credits: 4, code: "ICP141", semester: 2, requirements: [0]},
+    { name: "Matemática Discreta", credits: 4, code: "ICP144", semester: 2, requirements: [1]},
+    { name: "Habilidades sociais para o trabalho", credits: 2, code: "ICP145", semester: 2, requirements: [2]},
+    { name: "Organização de Dados", credits: 2, code: "ICP142", semester: 2},
+    { name: "Projeto Prático", credits: 2, code: "ICP143", semester: 2, requirements: [0,4,5]},
+    { name: "Cálculo Infinitesimal I", credits: 6, code: "MAE111", semester: 2},
+    //12-17
+    { name: "Estrutura de Dados", credits: 4, code: "ICP116", semester: 3, requirements: [6]},
+    { name: "Álgebra Linear Algorítmica", credits: 5, code: "ICP115", semester: 3},
+    { name: "Introdução a Modelagem de Sistemas", credits: 4, code: "ICP211", semester: 3, requirements: [4]},
+    { name: "Programação Orientada a Objetos", credits: 4, code: "ICP213", semester: 3, requirements: [6]},
+    { name: "Introdução a Computação Numérica", credits: 2, code: "ICP212", semester: 3, requirements: [0,5]},
+    { name: "Cálculo Infinitesimal II", credits: 4, code: "MAE992", semester: 3, requirements: [11]},
+    //18-22
+    { name: "Banco de Dados I", credits: 4, code: "ICP489", semester: 4, requirements: [12]},
+    { name: "Tecnologia e Sociedade", credits: 4, code: "ICP253", semester: 4, requirements: [8]},
+    { name: "Computação Científica e Análise de Dados", credits: 4, code: "ICP252", semester: 4, requirements: [13,16]},
+    { name: "Arquitetura de Computadores e Sistemas Operacionais", credits: 4, code: "ICP251", semester: 4, requirements: [5,6]},
+    { name: "Estatística e Probabilidade", credits: 4, code: "MAD243", semester: 4},
+    //23-27
+    { name: "Algoritmos e Grafos", credits: 4, code: "ICP368", semester: 5, requirements: [7,12]},
+    { name: "Linguagens Formais", credits: 4, code: "ICP123", semester: 5, requirements: [7]},
+    { name: "Computadores e Programação", credits: 4, code: "MAB353", semester: 5, requirements: [21]},
+    { name: "Modelagem Matemática e Computacional", credits: 4, code: "ICP312", semester: 5, requirements: [13,17]},
+    { name: "Modelagem e Avaliação de Desempenho", credits: 4, code: "ICP311", semester: 5, requirements: [13,22]},
+    //28-32
+    { name: "Otimização", credits: 4, code: "ICP325", semester: 6, requirements: [13,16]},
+    { name: "Lógica e Computabilidade", credits: 4, code: "ICP324", semester: 6, requirements: [24]},
+    { name: "Programação Concorrente", credits: 4, code: "ICP321", semester: 6, requirements: [15,25]},
+    { name: "Introdução ao Aprendizado de Máquina", credits: 4, code: "ICP323", semester: 6, requirements: [20,22]},
+    { name: "Redes de Computadores I", code: "ICP322", credits: 4, semester: 6, requirements: [0,5,22]},
+    //33-37
+    { name: "Metodologia da Pesquisa", credits: 4, code: "ICP412", semester: 7, requirements: [19]},
+    { name: "Segurança da Informação", credits: 4, code: "ICP411", semester: 7, requirements: [32]},
+    { name: "Eletiva", credits: 4, semester: 7},
+    { name: "Eletiva", credits: 4, semester: 7},
+    { name: "Eletiva", credits: 4, semester: 7},
+    //38-42
+    { name: "Trabalho de Conclusão de Curso", credits: 2, code: "ICPK01", semester: 8, requirements:[33]},
+    { name: "Eletiva", credits: 4, semester: 8},
+    { name: "Eletiva", credits: 4, semester: 8},
+    { name: "Eletiva", credits: 4, semester: 8},
+    { name: "Eletiva", credits: 4, semester: 8},
+    //43-46
+    { name: "Eletiva", credits: 4, semester: 9},
+    { name: "Eletiva", credits: 4, semester: 9},
+    { name: "Eletiva", credits: 4, semester: 9},
+    { name: "Eletiva", credits: 4, semester: 9},
 ]
