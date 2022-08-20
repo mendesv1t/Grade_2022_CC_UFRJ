@@ -18,7 +18,8 @@ html, body {
     margin-bottom: 3.1vh;
     display: block;
     width: 9vw;
-    height: 9.2vh;
+    height: fit-content;
+    min-height: 10vh;
 }
 
 /* Removes blue outline when clicked: */
