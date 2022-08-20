@@ -31,13 +31,16 @@ html, body {
 .course-box {
 	color: black;
     /* Border of rectangle: */
-    border: 0.09vw solid black;
+    border: 0.17vw solid rgb(113, 110, 110);
+    border-radius: 10px;
 }
 
 .semester-box {
     color: black;
     /* Border of rectangle: */
-    border: 0.09vw solid black;
+    border: 0.20vw solid black;
+    min-height: 6vh;
+    border-radius: 7px;
 }
 
 #panel {
