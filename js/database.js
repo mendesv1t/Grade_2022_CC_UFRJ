@@ -64,5 +64,5 @@ window.courses = [
     { name: "Eletiva", credits: 4, semester: 9},
     { name: "Eletiva", credits: 4, semester: 9},
     { name: "Eletiva", credits: 4, semester: 9},
-    { name: "Eletiva", credits: 4, semester: 9},
+    { name: "Eletiva Humanas", credits: 4, semester: 9},
 ]
