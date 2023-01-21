@@ -215,3 +215,41 @@ html, body {
   	top: 60%;
   	transform: translateY(-50%);
 }
+
+.legenda {
+    position: absolute;
+	bottom: 2.2vh;
+	left: 0.8vw;
+    text-align: center;
+    margin-top: 2vh;
+    margin-left: 0.7vw;
+    background-color: #c3d4f0;
+    width: 76px;
+    height: 25px;
+    min-height: 2vh;
+    border-radius: 7px;
+
+}
+#p2023-1 {
+    background-color: #fac6ff;
+}
+#p2023-2 {
+    background-color: #a8c9ff;
+}
+#p2024-1 {
+    background-color: #ffdfa8;
+}
+#p2024-2 {
+    background-color: #babce6;
+}
+#p2025-1 {
+    background-color: #b52b42;
+}
+#p2025-2 {
+    background-color: #92a8a6;
+}
+#concluido {
+    background-color: #b1fca4;
+}
+
+

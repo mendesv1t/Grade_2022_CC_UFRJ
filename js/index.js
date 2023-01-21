@@ -717,3 +717,7 @@ function setCookie(cname, cvalue) {
     var expires = "expires="+d.toUTCString();
     document.cookie = cname + "=" + cvalue + ";" + expires + ";path=/";
 }
+
+function adicionarLegendas() {
+    document.appendChild($("#legendas").append(window.legendas));
+}

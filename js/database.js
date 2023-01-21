@@ -5,6 +5,8 @@ window.semesters = 9;
 /* The first color is default for selecting options as well, so make sure to choose that one wisely */
 window.colors = ["#b1fca4", "#fac6ff", "#a8c9ff", "#ffdfa8", "#babce6", "#b52b42", "#92a8a6"];
 
+window.legendas = ["Concluído", "2023.1", "2023.2", "2024.1", "2024.2", "2025.1", "2025.2",];
+
 // Order of courses matters: do not swap positions. Append at the end.
 window.courses = [
     //0-5
