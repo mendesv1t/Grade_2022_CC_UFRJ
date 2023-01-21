@@ -259,7 +259,7 @@ html, body {
 .periodo-box {
 	color: black;
     /* Border of rectangle: */
-    border: 0.10vw solid rgb(169, 169, 169);
+    border: 0.10vw solid rgb(56, 56, 56);
 }
 body {
     background-color: rgb(16, 15, 15);
