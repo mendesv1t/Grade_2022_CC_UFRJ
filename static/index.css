@@ -220,10 +220,9 @@ html, body {
     position: absolute;
 	bottom: 2.2vh;
 	left: 0.8vw;
-    text-align: center;
+    
     margin-top: 2vh;
     margin-left: 0.7vw;
-    background-color: #c3d4f0;
     width: 80px;
     height: 25px;
     min-height: 3vh;
