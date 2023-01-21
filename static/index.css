@@ -256,5 +256,10 @@ html, body {
     background-color: #b1fca4;
     margin-right: 20px;
 }
+.periodo-box {
+	color: black;
+    /* Border of rectangle: */
+    border: 0.10vw solid rgb(169, 169, 169);
+}
 
 
