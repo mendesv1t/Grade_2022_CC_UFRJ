@@ -261,5 +261,11 @@ html, body {
     /* Border of rectangle: */
     border: 0.10vw solid rgb(169, 169, 169);
 }
+body {
+    background-color: rgb(16, 15, 15);
+}
+#leg {
+    color: rgb(184, 181, 181);
+}
 
 
