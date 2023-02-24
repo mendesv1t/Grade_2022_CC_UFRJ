@@ -6,6 +6,7 @@
 html, body {
     margin: 0;
     height: 100%;
+    background-color: #FFFFF0;
 }
 
 /* General boxes/buttons CSS: */
@@ -260,9 +261,6 @@ html, body {
 	color: black;
     /* Border of rectangle: */
     border: 0.10vw solid rgb(56, 56, 56);
-}
-body {
-    background-color: rgb(16, 15, 15);
 }
 #leg {
     color: rgb(184, 181, 181);
