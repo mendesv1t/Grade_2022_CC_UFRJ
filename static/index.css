@@ -229,28 +229,33 @@ html, body {
     min-height: 3vh;
 
 }
-#p2023-1 {
+#p2023-2 {
     background-color: #eca0df;
     margin-right: 20px;
 }
-#p2023-2 {
+#p2024-1 {
     background-color: #6a9eda;
     margin-right: 20px;
 }
-#p2024-1 {
+#p2024-2 {
     background-color: #fdfd96;
     margin-right: 20px;
 }
-#p2024-2 {
+#p2025-1 {
     background-color: #a68069;
     margin-right: 20px;
 }
-#p2025-1 {
+#p2025-2 {
     background-color: #ff8097;
     margin-right: 20px;
 }
-#p2025-2 {
+#p2026-1 {
     background-color: #3f8880;
+    margin-right: 20px;
+}
+
+#p2026-2 {
+    background-color: #fbaa74;
     margin-right: 20px;
 }
 #concluido {
