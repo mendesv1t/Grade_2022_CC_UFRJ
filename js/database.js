@@ -50,7 +50,7 @@ window.courses = [
     { name: "Redes de Computadores I", code: "ICP322", credits: 4, semester: 6, requirements: [0,5,22]},
     //33-37
     { name: "Metodologia da Pesquisa", credits: 4, code: "ICP412", semester: 7, requirements: [19]},
-    { name: "Segurança da Informação", credits: 4, code: "ICP411", semester: 7, requirements: [32]},
+    { name: "Segurança da Informação", credits: 4, code: "ICP411", semester: 7, requirements: [25,32]},
     { name: "Eletiva", credits: 4, semester: 7},
     { name: "Eletiva", credits: 4, semester: 7},
     { name: "Eletiva", credits: 4, semester: 7},
