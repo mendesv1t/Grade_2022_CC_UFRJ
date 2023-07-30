@@ -36,7 +36,7 @@ body {
 .course-box {
 	color: black;
     /* Border of rectangle: */
-    border: 0.17vw solid rgb(113, 110, 110);
+    border: 0.17vw solid rgb(27, 26, 26);
     border-radius: 10px;
 }
 
@@ -304,7 +304,7 @@ body {
 .periodo-box {
 	color: black;
     /* Border of rectangle: */
-    border: 0.15vw solid rgb(68, 66, 66);
+    border: 0.15vw solid rgb(28, 27, 27);
     display: flex;
     width: 7em;
     height: 2em;
