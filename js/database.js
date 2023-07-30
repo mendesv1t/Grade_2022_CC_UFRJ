@@ -3,7 +3,7 @@ window.semesters = 9;
 
 /* List of available colors to toggle a course as completed */
 /* The first color is default for selecting options as well, so make sure to choose that one wisely */
-window.colors = ["#a3ffac", "#eca0df", "#6a9eda", "#fdfd96", "#a68069", "#ff8097", "#3f8880", "FFD6A5"];
+window.colors = ["#83f28e", "#eca0df", "#6a9eda","#F0C929", "#44e6e0","#b82f44", "#3f8880", "#fbaa74", "#E48586", "#916DB3", "#293462", "#fbdb74", "#747372", "#83f28e"];
 
 window.legendas = ["Concluído", "2023.1", "2023.2", "2024.1", "2024.2", "2025.1", "2025.2",];
 
