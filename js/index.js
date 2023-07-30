@@ -588,6 +588,30 @@ function handleOptionsMenu(){
 		}
 	});
 
+    //////////////////////////
+	/// TEMA OPTION ICON ///
+	//////////////////////////
+
+	// Tema option icon:
+	var temaButton = $("#tema");
+    var setTema = false;
+
+	// When clicking tema option:
+	temaButton.on(mouseDown, function(){
+		// Switches state:
+        if (setTema === false) {
+            document.getElementById("titulo").style.color = "white"
+            document.body.style.backgroundColor = "#1a1a1a";
+            setTema = true;
+        } else {
+            document.getElementById("titulo").style.color = "black"
+            document.body.style.backgroundColor = "white";
+            setTema = false;
+        }
+    
+        
+	});
+
 }
 
 

@@ -7,7 +7,6 @@
 html, body {
     margin: 0;
     height: 100%;
-    background-color: #FFFFF0;
 }
 body {
     display: flex;
@@ -23,7 +22,7 @@ body {
     font-family: Rounded;
     margin-bottom: 2.1vh;
     display: block;
-    width: 9vw;
+    width: 9.2vw;
     height: fit-content;
     min-height: 10vh;
 }
@@ -190,6 +189,12 @@ body {
 #options-menu #switch {
 	top: 9.1vw;
 	background-image: url("images/switch.png");
+    background-color: #ffffff;
+}
+#options-menu #tema {
+	top: 12.1vw;
+	background-image: url("images/tema.png");
+    background-color: #ffffff;
 }
 
 .option-marked {
@@ -272,7 +277,7 @@ body {
     background-color: #916DB3;
 }
 #p2028-1 {
-    background-color: #293462;
+    background-color: #404d83;
 }
 
 #p2028-2 {
@@ -291,16 +296,22 @@ body {
     font-weight: bold;
     font-family: Rounded;
 }
+#titulo {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 22pt;
+    font-weight: 400;
+}
 .periodo-box {
 	color: black;
     /* Border of rectangle: */
-    border: 0.10vw solid rgb(56, 56, 56);
+    border: 0.15vw solid rgb(68, 66, 66);
     display: flex;
     width: 7em;
     height: 2em;
     align-items: center;
     justify-content: center;
     font-size: 12pt;
+    border-radius: 7px;
 }
 #leg {
     color: #000000;
