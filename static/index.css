@@ -3,10 +3,15 @@
     src: url('fonts/CandelaBook.otf');
 }
 
+
 html, body {
     margin: 0;
     height: 100%;
     background-color: #FFFFF0;
+}
+body {
+    display: flex;
+    flex-direction: column;
 }
 
 /* General boxes/buttons CSS: */
@@ -16,7 +21,7 @@ html, body {
     text-align: center;
     text-decoration: none;
     font-family: Rounded;
-    margin-bottom: 3.1vh;
+    margin-bottom: 2.1vh;
     display: block;
     width: 9vw;
     height: fit-content;
@@ -45,8 +50,7 @@ html, body {
 }
 
 #panel {
-    margin-top: 2vh;
-    margin-left: 0.7vw;
+    margin-top: 1.5vh;
 }
 
 .column {
@@ -218,54 +222,85 @@ html, body {
 }
 
 .legenda {
-    position: absolute;
-	bottom: 2.2vh;
-	left: 0.8vw;
-    
-    margin-top: 2vh;
-    margin-left: 0.7vw;
-    width: 80px;
-    height: 25px;
+    font-family: Rounded;
+    position: fixed;
+	left: 1vw;
+    right: 1vw;
+
+    width: 8px;
+    height: 2em;
     min-height: 3vh;
+    margin-bottom: 2em;
 
 }
+.baseLegendas {
+    margin-top: 2em;
+    margin-right: 0.2em;
+    margin-left: 1em;
+    font-weight: bold;
+    font-family: Rounded;
+    background-color: red;
+}
+
 #p2023-2 {
     background-color: #eca0df;
-    margin-right: 20px;
 }
 #p2024-1 {
     background-color: #6a9eda;
-    margin-right: 20px;
 }
 #p2024-2 {
-    background-color: #fdfd96;
-    margin-right: 20px;
+    background-color: #F0C929;
 }
 #p2025-1 {
-    background-color: #a68069;
-    margin-right: 20px;
+    background-color: #44e6e0;
 }
 #p2025-2 {
-    background-color: #ff8097;
-    margin-right: 20px;
+    background-color: #b82f44;
 }
 #p2026-1 {
     background-color: #3f8880;
-    margin-right: 20px;
 }
 
 #p2026-2 {
     background-color: #fbaa74;
-    margin-right: 20px;
+}
+#p2027-1 {
+    background-color: #E48586;
+}
+
+#p2027-2 {
+    background-color: #916DB3;
+}
+#p2028-1 {
+    background-color: #293462;
+}
+
+#p2028-2 {
+    background-color: #fbdb74;
+}
+#p2029-1 {
+    background-color: #747372;
 }
 #concluido {
-    background-color: #a3ffac;
-    margin-right: 20px;
+    background-color: #83f28e;
+}
+#legendas {
+    background-color: #ffffff;
+    margin-top: 2em;
+    margin-left: 1em;
+    font-weight: bold;
+    font-family: Rounded;
 }
 .periodo-box {
 	color: black;
     /* Border of rectangle: */
     border: 0.10vw solid rgb(56, 56, 56);
+    display: flex;
+    width: 7em;
+    height: 2em;
+    align-items: center;
+    justify-content: center;
+    font-size: 12pt;
 }
 #leg {
     color: #000000;
