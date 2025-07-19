@@ -18,6 +18,8 @@ var pressAndHoldTime = 500;    		// Period of time for the program to consider a
 	 // Handles mobile orientation warnings:
 	 handleMobileOrientation();
 
+     createSemesterButtons();
+
      // Adds click event to close all tooltips:
      $("body").click(function(e) {
 
@@ -640,6 +642,54 @@ function handleMobileOrientation(){
 	});
 }
 
+function createSemesterButton(semester, order){
+    // Turns [2025, 1] into "2025.1", for example
+    let semesterString = `${semester[0]}.${semester[1]}`;
+
+    let newButton = $("<div>").addClass("periodo-box baseLegendas");
+    newButton.css("background-color", window.colors[order]);
+    
+    let buttonText = (order == 0) ? "Concluído" : semesterString;
+    let innerSpan = $(`<span>${buttonText}</span>`);
+
+    newButton.append(innerSpan);
+
+    let mouseDown = (document.ontouchstart === null) ? "touchstart" : "mousedown";
+    newButton.on(mouseDown, () => {
+        let bucketButton = $("#bucket");
+        colorId = order;
+		bucketButton.css("background-color", window.colors[colorId]);
+
+		setCookie("colorId", colorId.toString());
+	});
+
+    return newButton;
+}
+
+function nextSemester(semester){
+    if (semester[1] == 2) {
+        semester[0]++;
+        semester[1] = 1;
+    }
+    else {
+        semester[1] = 2;
+    }
+
+    return semester
+}
+
+function createSemesterButtons(){
+    let currentSemester = window.currentSemester;
+    let container = $(".course-name");
+
+    for (let i = 0; i < window.colors.length; i++) {
+        let semesterButton = createSemesterButton(currentSemester, i);
+        container.append(semesterButton);
+
+        currentSemester = nextSemester(currentSemester);
+    }
+}
+
 //////////////////////////////////
 /// HANDLE HEX COLOR DARKENING ///
 //////////////////////////////////
@@ -740,8 +790,4 @@ function setCookie(cname, cvalue) {
     d.setTime(d.getTime() + (20 * 365 * 24 * 60 * 60 * 1000));
     var expires = "expires="+d.toUTCString();
     document.cookie = cname + "=" + cvalue + ";" + expires + ";path=/";
-}
-
-function adicionarLegendas() {
-    document.appendChild($("#legendas").append(window.legendas));
 }
